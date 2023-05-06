@@ -12,9 +12,6 @@ package healthdata;
 import java.time.LocalDate;
 import java.time.Period;
 
-//This system maintains important health information about a patient.
-//Note: This class assumes values passed to the set methods are correct.
-// REVIEW THIS FILE AND ASSIGNMENT INSTRUCTIONS CAREFULLY BEFORE YOU START OFF!!
 /**
  * This class maintains important health information about a patient. Note: This
  * class assumes values passed to the set methods are correct.
@@ -24,9 +21,7 @@ import java.time.Period;
  */
 public class Patient {
 
-//TO DO 1: INCLUDE YOUR ATTRIBUTES HERE. REMEMBER TO CHECK THE UML CLASS DIAGRAM TO INCLUDE ALL ATTRIBUTES LISTED AND THEIR TYPES.
 
-//START CODE
 	/*
 	 * The first name, last name, gender, birth year, birth month, birth day, height
 	 * and weight of the patient object
@@ -40,11 +35,8 @@ public class Patient {
 	private int birthDay;
 	private double height; // unit is inch
 	private double weight; // unit is pound (lb)
-//END CODE
 
-// TO DO 2: INCLUDE YOUR CONSTRUCTOR HERE 
-//START CODE
-
+	
 	/**
 	 * This is a parameterized constructor which takes first name, last name,
 	 * gender, birth year, birth month, birth day, height and weight of the patient
@@ -71,9 +63,6 @@ public class Patient {
 		this.weight = weight;
 	}
 
-//END CODE
-
-//TO DO 3: INCLUDE YOUR SET AND GET METHODS HERE. CHECK THE UML CLASS TO ENSURE ALL ARE COMPLETE. SOME ARE ALREADY PROVIDED FOR YOU BELOW.
 
 	/**
 	 * This is a getter which returns the first name of the patient.
@@ -219,8 +208,7 @@ public class Patient {
 		this.weight = weight;
 	}
 
-	// THIS RETURNS THE PATIENT'S Body Mass Index (BMI) AND IT IS PROVIDED HERE FOR
-	// YOU. DO NOT CHANGE THIS PIECE OF CODE!
+
 	/**
 	 * This method calculates and returns the patient Body Mass Index (BMI).
 	 * 
@@ -230,6 +218,7 @@ public class Patient {
 		return (getWeight() * 703) / (getHeight() * getHeight());
 	}
 
+	
 	/**
 	 * This method calculates and returns the patient Body Mass Index (BMI).
 	 * Note: an error is introduced in this method which uses the wrong operator '+'
@@ -295,16 +284,10 @@ public class Patient {
 		return range;
 	}
 
-// TO DO 4: THIS PORTION OF CODE SHOULD DISPLAY ALL THE PATIENT'S HEALTH DATA. DO NOT MISS ANY DATA / INFORMATION
-
 	/**
 	 * Display the all health data of the patient using System.out.printf()
 	 */
 	public void displayMyHealthData() {
-
-//TO DO 5: HINT: YOU MUST USE System.out.printf TO SHOW ALL HEALTH DATA. DO NOT MISS ANY ITEM.
-
-// START CODE
 
 		System.out.println("The health data of the patient is displayed as below:");
 		System.out.printf("First Name: %s%n", firstName);
@@ -343,10 +326,6 @@ public class Patient {
 		}
 
 		System.out.printf("%n%n");
-
-//END CODE
-
-//DO NOT MODIFY THIS PROTION OF CODE. IT SHOULD PRINT AS IT IS - ALREADY PROVIDED FOR YOU!!
 
 		System.out.println("BMI VALUES");
 		System.out.println("Underweight: less than 18.5");
